@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/font-icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/shared.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <title>Mon's Pet</title>
+</head>
+<body>
+    <div class="main">
+        <!-- Header -->
+        <div id="header">
+            <div class="grid wide">
+                <div class="header__container">
+                    <div class="header__logo">
+                        <a href="#" class="header__logo-link">
+                            <img src="./assets/img/logo/header_logo.png" alt="" class="header__logo-img">
+                        </a>
+                    </div>
+                    
+                    <!-- Nav -->
+                    <div class="header__nav hide-on-mobile-tablet">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item ">
+                                <a href="" class="header__nav-link highlight">
+                                    <span>Trang Chủ</span>
+                                </a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="" class="header__nav-link">
+                                    <span>Giới Thiệu</span>
+                                </a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="" class="header__nav-link">
+                                    <span>Chuyên mục thú cưng <i class="fas fa-angle-down"></i></span>
+                                </a>
+
+                                <ul class="header__subnav-list">
+                                    <li class="header__subnav-item">
+                                        <a class="header__subnav-link" href="">Mèo</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a class="header__subnav-link" href="">Chó</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a class="header__subnav-link" href="">Chim</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a class="header__subnav-link" href="">Hamter</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a class="header__subnav-link" href="">Các loại động vật khác</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="" class="header__nav-link">
+                                    <span>Tin tức</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- Search -->
+                        <label for="header-search-open" class="header__search">
+                            <div class="ti-search"></div>
+                        </label>
+
+                        <input type="checkbox" hidden class="header__search-checkbox" id="header-search-open">
+
+                        <label class="header__search-overlay">
+                            <!-- Modal Search -->
+                            <div class="modal-search">
+                                <label for="header-search-open" class="modal-search-btn-close">
+                                    <i class="fas fa-times"></i>
+                                </label>
+
+                                <input type="text" class="modal-search-input" placeholder="TYPE THEN HIT ENTER TO SEARCH">
+                            </div>
+                        </label>
+
+                        
+                    </div>
+
+                    <!-- Nav Mobile Tablet -->
+                    <div class="btn-menu-nav-mobile">
+                        <div class="nav-mobile-btn">
+                            <i class="btn-mobile-icon fas fa-bars"></i>
+                            <span id="nav-mobile-span">Menu</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-mobile">
+                <div class="nav-mobile-container" style="max-height: 0px;">
+                    <ul class="nav-mobile-list">
+                        <li class="nav-mobile-item">
+                            <a href="" class="nav-mobile-link">Trang Chủ</a>
+                        </li>
+                        <li class="nav-mobile-item">
+                            <a href="" class="nav-mobile-link">Giới Thiệu</a>
+                        </li>
+                        <li class="nav-mobile-item">
+                            <a href="" class="nav-mobile-link">Chuyên mục thú cưng</a>
+                            <i class="subnav__mobile-link-open fas fa-plus"></i>
+                            <i class="subnav__mobile-link-close ti-minus"></i>
+
+                            <ul class="subnav__mobile">
+                                <li class="subnav__mobile-item">
+                                    <a href="" class="subnav__mobile-link">Mèo</a>
+                                </li>
+                                <li class="subnav__mobile-item">
+                                    <a href="" class="subnav__mobile-link">Chó</a>
+                                </li>
+                                <li class="subnav__mobile-item">
+                                    <a href="" class="subnav__mobile-link">Chim</a>
+                                </li>
+                                <li class="subnav__mobile-item">
+                                    <a href="" class="subnav__mobile-link">Hamter</a>
+                                </li>
+                                <li class="subnav__mobile-item">
+                                    <a href="" class="subnav__mobile-link">Các loại động vật khác</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-mobile-item">
+                            <a href="" class="nav-mobile-link">Tin tức</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav-mobile-search">
+                        <form action="" class="nav-mobile-search-wrap">
+                            <input type="text" placeholder="Search" class="nav-mobile-search-input">
+                            <button class="nav-mobile-search-btn">
+                                <div class="ti-search"></div>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider -->
+        <div id="slider">
+            <div class="slider-text">
+                <h1 class="slider-text-heading">Mon's Pet</h1>
+                <div class="slider-text-content">Cổng thông tin miễn phí về động vật, thú cưng</div>
+            </div>
+        </div>
+        <!-- Content -->
+        <div class="content">
+            <div class="grid wide">
+                <div class="col l-12">
+                    <!-- Introduce -->
+                    <div class="introduce">
+                        <div class="col introduce__header">
+                            <h2>Giới thiệu</h2>
+                        </div>
+                        <div class="row col introduce__container">
+                            <div class="col l-6 m-12 c-12 introduce__content">
+                                <div class="introduce__content-wrap">
+                                    <div class="introduce__content-text">
+                                        <span><span class="introduce-text-header">Mon’s Pet</span> được xây dựng dựa trên tiêu chí là cổng thông tin khổng lồ và hoàn toàn miễn phí về các vấn đề xung quanh động vật , đặc biệt là thú cưng, cụ thể như các bệnh về chó mèo, các thực phẩm dinh dưỡng dành cho thú cưng, cách chăm sóc và điều trị bệnh cho chó mèo...</span>
+                                    </div>
+                                    <div class="introduce__content-text">
+                                        <span>Tất cả những thông tin tại Monspet được sưu tầm và tham khảo từ nhiều nguồn khác nhau có chọn lọc, bên cạnh đó còn là trải nghiệm thực tế của chúng tôi trong quá trình nuôi thú cưng để đem đến cho độc giả những thông tin chính xác và hữu ích nhất.</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col l-6 m-12 c-12 introduce__img">
+                                <div class="introduce__img-wrap">
+                                    <img src="./assets/img/introduce/shaking-hands8.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="btn-detail">
+                            <a href="" class="btn-detail-link">Chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Commit -->
+            <div class="commit">
+                <div class="grid wide">
+                    <div class="col l-12 m-12">
+                        <div class="commit__heading">
+                            <h1 class="commit-header">Cam kết</h1>
+                            <div class="commit-text">Mons’ Pet .Com được định hình là trang web thông tin hàng đầu về động vật, thú cưng. Chúng tôi cam kết tất cả nội dung cung cấp trên trang đều được trích dịch từ các nguồn web nước ngoài rõ ràng, có ý kiến và trích dẫn thú y. Từ đó mang lại những giải pháp chính xác nhất cho người xem.</div>
+                        </div>
+        
+                        <div class="row commit__content">
+                            <div class="col l-4 m-4 c-12 commit__content-wrap">  
+                                <div class="commit__content-icon">
+                                    <img src="./assets/img/logo/pen.png" alt="">
+                                </div>
+                                <div class="commit__content-header">Nội dung</div>
+                                <div class="commit__content-text">Nội dung chất lượng, chính xác, có nguồn uy tín, có thú y xem xét.</div>
+                            </div>
+                            <div class="col l-4 m-4 c-12 commit__content-wrap">
+                                <div class="commit__content-icon">
+                                    <img src="./assets/img/logo/layout-box.png" alt="">
+                                </div>
+                                <div class="commit__content-header">Sản phẩm</div>
+                                <div class="commit__content-text">Sản phẩm được gợi ý công bằng, được phân tích review chi tiết chính xác.</div>
+                            </div>
+                            <div class="col l-4 m-4 c-12 commit__content-wrap">
+                                <div class="commit__content-icon">
+                                    <img src="./assets/img/logo/loa.png" alt="">
+                                </div>
+                                <div class="commit__content-header">Hỗ trợ</div>
+                                <div class="commit__content-text">Hỗ trợ hết mình, hướng dẫn những nguồn khám bệnh thú cưng uy tín, chất lượng.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Video -->
+            <div class="content__video">
+                <div class="grid wide">
+                    <div class="col l-12 m-12">
+                        <div class="content__video-heading">
+                            <div class="content__video-heading-text">Xem thêm một số videos thú vị về động vật - thú cưng</div>
+                            <h2 class="content__video-header">videos</h2>
+                        </div>
+
+                        <div class="col content__video-main">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/_1FY5kL_zXU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Link Product -->
+            <div class="link__product">
+                <div class="grid wide">
+                    <div class="row col link__product-container">
+                        <div class="col l-6 c-12 link__product-wrap">
+                            <a href="" class="link__product-logo">
+                                <img src="./assets/img/logo/aeon_eshop.png" alt="">
+                            </a>
+                            <div class="link__product-heading">
+                                <h3 class="link__product-header">Đồ dùng Pet Độc lạ</h3>
+                            </div>
+                            <div class="link__product-text">Tham khảo thêm nhiều đồ dùng pet, nhà cửa, đệm lót, sửa tắm, thức ăn chó, mèo chính hãng <span>hay ho, độc lạ</span> tại AEON-ESHOP</div>
+                            <div class="link__product-btn">
+                                <a href="" class="link__product-btn_click btn-invalid">Click đây</a>
+                            </div>
+                        </div>
+    
+                        <div class="col l-6 c-12 link__product-wrap">
+                            <a href="" class="link__product-logo">
+                                <img src="./assets/img/logo/lazada.png" alt="">
+                            </a>
+                            <div class="link__product-heading">
+                                <h3 class="link__product-header">Đồ dùng Chăm sóc thú cưng</h3>
+                            </div>
+                            <div class="link__product-text">Xem thêm nhiều đồ dùng pet, đồ dùng chăm sóc thú cưng, thuốc, vòng cổ và nhiều thức ăn khô, đóng hộp có <span>giá rẻ</span> tại Lazada</div>
+                            <div class="link__product-btn">
+                                <a href="" class="link__product-btn_click">Click đây</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="link__product-text-about"><i>(Mua hàng online tại đây là lợi nhuận và động lực rất lớn để Mon’s Pet cung cấp nhiều nội dung chất lượng hơn)</i></div>
+                </div>
+            </div>
+            <!-- Friends -->
+            <div class="friends">
+                <div class="grid wide">
+                    <div class="col friends__heading">
+                        <h2 class="friends__header">Những người bạn</h2>
+                        <div class="friends__heading-text">Mon’s Pet .Com cung cấp những bài viết thông tin chủ yếu cho 4 loại thú cưng rất thường gặp và là những người bạn thân thiết dễ dàng bắt gặp tại mỗi gia đình người Việt chúng ta. Đó là: Chó, Mèo, Chim và Hamster.</div>
+                        <div class="friends__heading-text">Ngoài ra chúng tôi vẫn có 1 số bài viết về những loại động vật khác nhưng sẽ ít hơn.</div>
+                    </div>
+
+                    <div class="row col friends__wrap">
+                        <div class="l-3 m-6 c-12 friends-img">
+                            <img src="./assets/img/friends/meo.jpg" alt="">
+                            <div class="friends__name-item"> <i>Mèo</i></div>
+                        </div>
+                        <div class="l-3 m-6 c-12 friends-img">
+                            <img src="./assets/img/friends/hamster.jpg" alt="">
+                            <div class="friends__name-item"> <i>Hamster</i></div>
+                        </div>
+                        <div class="l-3 m-6 c-12 friends-img">
+                            <img src="./assets/img/friends/cho.jpg" alt="">
+                            <div class="friends__name-item"> <i>Chó</i></div>
+                        </div>
+                        <div class="l-3 m-6 c-12 friends-img">
+                            <img src="./assets/img/friends/chim.jpg" alt="">
+                            <div class="friends__name-item"> <i>Chim</i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New Posts -->
+            <div class="new__posts">
+                <div class="new__posts-heading">
+                    <div class="grid wide">
+                        <div class="col new__posts-heading-wrap">
+                            <h2 class="new__posts-header">Những bài viết mới</h2>
+                            <div class="new__posts-header-text">Dưới đây là những bài viết mới nhất về Kinh nghiệm, kiến thức chăm sóc thú cưng tại website Mon’s Pet .Com</div>
+                            <div class="new__posts-header-text">Xem thêm tại: <a href="">Chuyên mục thú cưng</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid wide">
+                    <div class="row new__post-content">
+                        <div class="col l-4 m-6 c-12 new__post-content-item">
+                            <div class="new__post-content-item-heading">
+                                <a href="" class="new__post-content-item-header">Top 13 Thức Ăn Cho Chó Trưởng Thành & Chó Con Phổ Biến Hiện Nay</a>
+                            </div>
+                            <a href="" class="new__post-content-item-img">
+                                <img src="./assets/img/posts/thuc-an-cho-cho-min.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col l-4 m-6 c-12 new__post-content-item">
+                            <div class="new__post-content-item-heading">
+                                <a href="" class="new__post-content-item-header">Top 9 Thức Ăn Cho Mèo Trưởng Thành & Mèo Con Tốt Nhất Hiện Nay</a>
+                            </div>
+                            <a href="" class="new__post-content-item-img">
+                                <img src="./assets/img/posts/top-9-thuc-an-cho-meo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col l-4 m-6 c-12 new__post-content-item">
+                            <div class="new__post-content-item-heading">
+                                <a href="" class="new__post-content-item-header">Ký Sinh Trùng Máu Hemotropic Mycoplasmas Ở Chó Mèo</a>
+                            </div>
+                            <a href="" class="new__post-content-item-img">
+                                <img src="./assets/img/posts/Hemotropic-Mycoplasmas-768x384.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col l-4 m-6 c-12 new__post-content-item">
+                            <div class="new__post-content-item-heading">
+                                <a href="" class="new__post-content-item-header">Ký Sinh Trùng Máu Babesiosis Ở Chó Mèo Và Những Động Vật Khác</a>
+                            </div>
+                            <a href="" class="new__post-content-item-img">
+                                <img src="./assets/img/posts/ky-sinh-trung-mau-Babesiosis.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col l-4 m-6 c-12 new__post-content-item">
+                            <div class="new__post-content-item-heading">
+                                <a href="" class="new__post-content-item-header">Ký Sinh Trùng Máu Cytauxzoonosis Ở Mèo</a>
+                            </div>
+                            <a href="" class="new__post-content-item-img">
+                                <img src="./assets/img/posts/Cytauxzoonosis-768x384.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col l-4 m-6 c-12 new__post-content-item">
+                            <div class="new__post-content-item-heading">
+                                <a href="" class="new__post-content-item-header">6 Vấn Đề Sức Khỏe, Các Bệnh Phổ Biến Nhất Ở Mèo</a>
+                            </div>
+                            <a href="" class="new__post-content-item-img">
+                                <img src="./assets/img/posts/monspet.com_-1-768x384.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row content-social">
+                        <a href=""class="content-social-wrap">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href=""class="content-social-wrap">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href=""class="content-social-wrap">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                        <a href=""class="content-social-wrap">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer__content">
+                <div class="grid wide ">
+                    <div class="row col footer__content-container">
+                        <div class="col l-4 m-4 c-12">
+                            <div class="footer__content-logo">
+                                <img src="./assets/img/logo/logo-2021-monspet-size2.jpg" alt="">
+                            </div>
+                            <div class="footer__content-text"><i>Mon’s Pet là cổng thông tin khổng lồ và hoàn toàn miễn phí về các vấn đề xung quanh thú cưng và động vật</i></div>
+                        </div>
+
+                        <div class="col l-4 m-4 c-12 footer-list-page">
+                            <div class="footer-page-header">Danh Sách Trang</div>
+                            <ul class="footer-page-list">
+                                <li class="footer-list-page-item">
+                                    <a href=""class="footer-list-page-link">Giới thiệu</a>
+                                </li>
+                                <li class="footer-list-page-item">
+                                    <a href=""class="footer-list-page-link">Chính sách bảo mật</a>
+                                </li>
+                                <li class="footer-list-page-item">
+                                    <a href=""class="footer-list-page-link">Điều khoản dịch vụ</a>
+                                </li>
+                                <li class="footer-list-page-item">
+                                    <a href=""class="footer-list-page-link">Liên hệ</a>
+                                </li>
+                            </ul>
+                            
+                            <div class="footer-page-license">@Bản quyền bài viết thuộc về Monspet.com</div>
+                            <a href=""class="footer-page-license-img">
+                                <img src="./assets/img/logo/dmca_protected_sml.png" alt="">
+                            </a>
+                            
+                        </div>
+
+                        <div class="col l-4 m-4 c-12 footer-link-page">
+                            <div class="footer-page-header">Link Fanpage Facebook</div>
+                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmonspet%2F&tabs=timeline&width=320&height=252&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="320" height="252" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__ending">
+                <div class="grid wide">
+                    <div class="row col footer__ending-container">
+                        <div class="col l-6 m-6 c-12 footer__ending-copyright"><span>Copyright © 2019</span> Monspet.com @All rights reserved</div>
+                        <ul class="col l-6 m-6 c-12 footer__ending-btn-list">
+                            <li class="footer__ending-item">
+                                <a href="" class="footer__ending-link">Facebook</a>
+                            </li>
+                            <li class="footer__ending-item">
+                                <a href="" class="footer__ending-link">Twitter</a>
+                            </li>
+                            <li class="footer__ending-item">
+                                <a href="" class="footer__ending-link">Pinterest</a>
+                            </li>
+                            <li class="footer__ending-item">
+                                <a href="" class="footer__ending-link">Linkedin</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Cart and scroll -->
+        <a href="#header" class="btn__scroll">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+
+        <div class="menu__link" style="opacity: 0;">
+            <div class="btn__cart-container">
+                <div class="cart-title">Đồ cho Pet Độc lạ</div>
+                <div class="btn__cart-wrap">
+                    <i class="fas fa-shopping-bag"></i>
+                </div>
+            </div>
+        
+            <div class="btn__cart-container">
+                <div class="cart-title">Đồ dùng Pet Giá rẻ</div>
+                <div class="btn__cart-wrap">
+                    <i class="fas fa-shopping-basket"></i>
+                </div>
+            </div>
+                
+            <div class="btn__cart-container">
+                <div class="cart-title">Facebook Page</div>
+                <div class="btn__cart-wrap">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+            </div>
+        </div>
+        <div class="btn__cart">
+            <div class="btn__cart-container ">
+                <div class="cart-title cart-title-main">Pet Shopping</div>
+                <div class="btn__cart-wrap btn__cart-main">
+                    <i class="btn__cart-icon-main fas fa-shopping-cart"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        slideOutCart({
+            class: '.menu__link',
+        });
+        
+    </script>
+</body>
+</html>
