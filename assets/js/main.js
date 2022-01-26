@@ -83,3 +83,42 @@ function slideOutCart(options) {
         }
     }
 }
+
+// API
+var postsApi = 'http://localhost:3000/posts';
+
+function start() {
+    getPost(renderPost);
+}
+
+start();
+
+// funcition API
+function getPost(callback){
+    fetch(postsApi)
+        .then(function(response) {
+            return response.json();
+        })
+        .then(callback);
+}
+
+function renderPost(posts){
+    var newPosts = document.querySelector('.new__post-content');
+
+    var htmls = posts.map(function(post){
+        return `
+        <div class="col l-4 m-6 c-12 new__post-content-item">
+            <div class="new__post-content-item-heading">
+                <a href="" class="new__post-content-item-header">${post.title}</a>
+            </div>
+            <a href="" class="new__post-content-item-img">
+                <img src="${post.image}" alt="">
+            </a>
+        </div>
+        `;
+    }).join('');
+
+    
+
+    newPosts.innerHTML = htmls;
+}

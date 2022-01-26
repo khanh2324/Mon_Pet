@@ -119,7 +119,7 @@
 }
 
 .btn-mobile-icon{
-    padding-right: 6px;
+    margin-right: 6px;
     color: var(--white-color);
     transition: 0.3s;
     user-select: none;
@@ -1082,6 +1082,10 @@
     height: 52px;
     user-select: none;
     -webkit-user-select: none;
+}
+
+.btn__cart-main:focus{
+    outline: none ;
 }
 
 .btn__cart-main i{
